@@ -1,7 +1,28 @@
 import React, { Component } from 'react';
-import FrameLayout from './layout/FrameLayout';
-import { Status, Game, ResetButton } from './components';
+import { injectGlobal } from 'styled-components';
+import { normalize } from 'polished';
+import FrameLayout from '../layout/FrameLayout';
+import { Status, Game, ResetButton } from '../components';
 import './App.css';
+
+// Normalize Styles between Browsers
+// eslint-disable-next-line
+injectGlobal`
+    ${normalize()}
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    #root {
+        height: 100%;
+    }
+`;
 
 // App State
 const INITIAL_STATE = {
@@ -101,11 +122,7 @@ class App extends Component {
           isFinished={isFinished}
           curWinner={curWinner}
         />
-        <Game
-          className="game"
-          squares={squares}
-          onSelect={ix => this.onSelect(ix)}
-        />
+        <Game className="game" squares={squares} onSelect={ix => this.onSelect(ix)} />
         {isFinished && <ResetButton className="resetButton" onClick={e => this.onResetGame(e)} />}
       </FrameLayout>
     );

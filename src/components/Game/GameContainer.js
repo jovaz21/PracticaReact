@@ -59,6 +59,13 @@ class GameContainer extends Component {
   onSelect(ix) {
     const prevState = this.state;
     const { squares } = prevState;
+
+    /* check */
+    if (isGameFinished(getWinner(squares), squares)) {
+      return;
+    }
+
+    /* set */
     const { doGameSetAction, doStatusSetAction } = this.props;
 
     /* Set Game */

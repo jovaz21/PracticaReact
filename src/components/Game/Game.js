@@ -61,10 +61,17 @@ class Game extends Component {
 
   // Render Square
   renderSquare(i, SpecificSquare) {
+    const buttonId = `Button${i}`;
     const { squares } = this.props;
     const SquareInstance = SpecificSquare || Square;
     return (
-      <SquareInstance key={i} className={squares[i]} value={i} onClick={e => this.onClick(e)}>
+      <SquareInstance
+        id={buttonId}
+        key={i}
+        className={squares[i]}
+        value={i}
+        onClick={e => this.onClick(e)}
+      >
         {squares[i] ? squares[i] : EMPTY_SQUARE_VALUE}
       </SquareInstance>
     );

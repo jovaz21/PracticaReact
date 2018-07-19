@@ -46,7 +46,7 @@ const isGameFinished = (winner, squares) => {
   return res;
 };
 
-class GameContainer extends Component {
+export class GameContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {

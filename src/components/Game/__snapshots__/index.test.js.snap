@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Tests Snapshot 1`] = `
+<div
+  className="squares sc-bdVaJa iVFlTG"
+>
+  <div
+    className="VerticalLayoutItem game-row"
+  >
+    <div
+      className="game-row"
+      keyval="row-1"
+    >
+      <button
+        className="sc-htpNat bLhQoD"
+        id="Button0"
+        onClick={[Function]}
+        value={0}
+      >
+         
+      </button>
+      <button
+        className="sc-bxivhb kcRBGw"
+        id="Button1"
+        onClick={[Function]}
+        value={1}
+      >
+         
+      </button>
+      <button
+        className="sc-ifAKCX hCXenb"
+        id="Button2"
+        onClick={[Function]}
+        value={2}
+      >
+         
+      </button>
+    </div>
+  </div>
+  <div
+    className="VerticalLayoutItem game-row"
+  >
+    <div
+      className="game-row"
+      keyval="row-2"
+    >
+      <button
+        className="sc-EHOje jDqdhO"
+        id="Button3"
+        onClick={[Function]}
+        value={3}
+      >
+         
+      </button>
+      <button
+        className="X sc-bwzfXH euBMdG"
+        id="Button4"
+        onClick={[Function]}
+        value={4}
+      >
+        X
+      </button>
+      <button
+        className="sc-bZQynM jaBCQh"
+        id="Button5"
+        onClick={[Function]}
+        value={5}
+      >
+         
+      </button>
+    </div>
+  </div>
+  <div
+    className="VerticalLayoutItem game-row"
+  >
+    <div
+      className="game-row"
+      keyval="row-3"
+    >
+      <button
+        className="sc-gzVnrw iBncVh"
+        id="Button6"
+        onClick={[Function]}
+        value={6}
+      >
+         
+      </button>
+      <button
+        className="sc-htoDjs dNcQZT"
+        id="Button7"
+        onClick={[Function]}
+        value={7}
+      >
+         
+      </button>
+      <button
+        className="sc-dnqmqq kspAgd"
+        id="Button8"
+        onClick={[Function]}
+        value={8}
+      >
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
